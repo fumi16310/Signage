@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-re 'rubygems'
+require 'rubygems'
 require 'memcached'
 require 'sinatra'
 require 'haml'
