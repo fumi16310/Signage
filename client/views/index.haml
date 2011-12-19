@@ -1,0 +1,68 @@
+!!!XML5
+%html
+  %head
+    %title Digital Signage
+    %script{:type => 'text/javascript', :src => "js/jquery.js"}
+    %script{:type => 'text/javascript', :src => "js/goldfish.js"}
+    %script{:type => 'text/javascript', :src => "js/sample.js"}
+    %link{:rel =>"STYLESHEET",:href=>"common.css" ,:type=>"text/css"}
+    %meta{:charset=>"UTF-8"}
+  %body
+    %div{:id=>"get2"}
+      -if @contents2[0]=='nico'
+        %div{:class=>'nico'}
+          %li=@contents2[1]
+          %li=@contents2[2]
+          %li
+            %a{:href =>@contents2[3]}
+              %img{:src=>@contents2[5],:width=>"150",:height=>"150"}
+      -elsif @contents2[0]=='tabelog'
+        %div{:class=>'tabelog'}
+          %li=@contents2[0]
+          %li=@contents2[1]
+          %li=@contents2[2]
+      -elsif @contents2[0]=='twitter'
+        %div{:class=>'twitter'}
+          %li=@contents2[0]
+          %li=@contents2[1]
+          %li
+            %a{:href =>@contents2[3]}URL
+    %div{:id=>"get1"} 
+      -if @contents[0]=='nico'
+        %div{:class=>'nico'}
+          %li=@contents[1]
+          %li=@contents[2]
+          %li
+            %a{:href =>@contents[3]}
+              %img{:src=>@contents[5],:width=>"150",:height=>"150"}
+      -elsif @contents[0]=='tabelog'
+        %div{:class=>'tabelog'}
+          %li=@contents[0]
+          %li=@contents[1]
+          %li=@contents[2]
+      -elsif @contents[0]=='twitter'
+        %div{:class=>'twitter'}
+          %li=@contents[0]
+          %li=@contents[1]
+          %li
+            %a{:href =>@contents[3]}URL
+    %div{:id=>"get3"}
+      -if @contents3[0]=='nico'
+        %div{:class=>'nico'}
+          %li=@contents3[1]
+          %li=@contents3[2]
+          %li
+            %a{:href =>@contents3[3]}
+              %img{:src=>@contents3[5],:width=>"150",:height=>"150"}
+      -elsif @contents3[0]=='tabelog'
+        %div{:class=>'tabelog'}
+          %li=@contents3[0]
+          %li=@contents3[1]
+          %li=@contents3[2]
+      -elsif @contents3[0]=='twitter'
+        %div{:class=>'twitter'}
+          %li=@contents3[0]
+          %li=@contents3[1]
+          %li
+            %a{:href =>@contents3[3]}URL
+
