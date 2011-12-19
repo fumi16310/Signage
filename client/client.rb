@@ -1,1 +1,2 @@
-#!/usr/
+#!/usr/bin/env ruby
+
