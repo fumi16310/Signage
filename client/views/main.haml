@@ -1,37 +1,4 @@
-d
-    %title Digital Signage
-    %script{:type => 'text/javascript', :src => "js/jquery.js"}
-    %link{:rel =>"STYLESHEET",:href=>"main.css" ,:type=>"text/css"}
-    %meta{:charset=>"UTF-8"}
-
-  %body
-    %divs
-    %ul
-      -if @contents[0]=='nico'
-        %div{:class=>'nico'}
-          %li=@contents[1]
-          %li=@contents[2]
-          %li
-            %a{:href =>@contents[3]}
-              %img{:src=>@contents[5],:width=>"300",:height=>"300"}
-          %li=@contents[4]
-          %li
-            %a{:href =>@contents[3]}URL
-      -elsif @contents[0]=='tabelog'
-        %div{:class=>'tabelog'}
-          %li=@contents[1]
-          %li=@contents[2]
-          %li=@contents[3]
-          %li
-            %a{:href =>@contents[4]}Read More......
-      -elsif @contents[0]=='twitter'
-        %div{:class=>'twitter'}
-          %li twitter
-          %li=@contents[1]
-          %li=@contents[2]
-          %li
-            %a{:href =>@contents[3]}URL
-i!!!XML5
+!!!XML5
 %html
   %head
     %title Digital Signage
